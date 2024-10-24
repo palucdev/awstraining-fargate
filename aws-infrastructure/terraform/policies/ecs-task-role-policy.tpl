@@ -35,9 +35,10 @@ ${jsonencode(
     },
         {
           "Effect": "Allow",
-          "Action": "sns:Publish",
-          "Resource": "arn:aws:sns:${region}:${account_id}:my-notification"
+          "Action": "translate:TranslateText",
+          "Resource": "*"
         },
+
   ]
 }
 )
